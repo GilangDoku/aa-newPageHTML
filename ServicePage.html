@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<div>
+    <h3>Service Management</h3>
+    <p>Choose service you want to activate</p>
+    <div>
+        <form>
+            <table id="tableOne">
+                <thead>
+                    <!--IF Bahasa-->
+                    <tr>
+                        <th>Service</th>
+                        <th>Aktivasi</th>
+                        <th>Client ID</th>
+                        <th>Secret Key</th>
+                        <th>Nama Brand</th>
+                        <th>Status</th>
+                    </tr>
+                    <!--IF not Bahasa-->
+                    <tr>
+                        <th>Service</th>
+                        <th>Activate</th>
+                        <th>Client ID</th>
+                        <th>Secret Key</th>
+                        <th>Brand Name</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Service not null -->
+                    <tr>
+                        <td colspan="8" class="text-center">
+                            <h5>{{noDataMessage}}</h5>
+                        </td>
+                    </tr>
+                    <!--Data not Null-->
+                    <tr>
+                        <td>servicename <i>(tooltip info for description)</i></td>
+                        <td>
+
+                            <input type="checkbox" id="">
+                        </td>
+                        <td>clientid</td>
+                        <td>sharedkeyhash</td>
+                        <td>brandname </td>
+                        <td>serviceStatus</td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+    <div style="text-align: right">
+        <button id="submitService" type="button">
+            <!--Bahasa-->
+            <span> SIMPAN & LANJUTKAN </span>
+            <!-- Not Bahasa-->
+            <span> SAVE CHANGES </span>
+        </button>
+    </div>
+</div>
+
+</html>
