@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<div>
+    <div>
+        <!-- for Timeline  -->
+        <h3> Regristration </h3>
+        <ul>
+            <li>Informasi Bisnis</li>
+            <li>Informasi Pemilik Bisnis</li>
+            <li>Website Information Page & Business Estimation Page</li>
+            <li>Syarat & Ketentuan </li>
+        </ul>
+    </div>
+    <div>
+        <h3> Web Site Information </h3>
+        <label for="businessWebInp">Apakah Bisnis Anda Punya Website/Aplikasi</label> <br>
+        <select id="businessWebInp" name="businessWebInp">
+            <option value="0" selected>Iya,Punya</option>
+            <option value="1" selected>Punya, tapi dalama pengembangan</option>
+            <option value="2" selected>Tidak Punya</option>
+        </select>
+        <input type="text" id="webUrlInp" name="webUrlInp" placeholder="website url"> <br>
+        <label for="businessWebInp">Punya Sosmed / Toko di MarketPlace</label> <br>
+        <select id="businessSocmedInp" name="businessSocmedInp">
+            <option value="0" selected> Sosial Media </option>
+            <option value="1" selected> Toko Di Marketplace </option>
+        </select>
+        <input type="text" id="socmedUrlInp" name="socmedUrlInp" placeholder="Sosmed Url"> <br>
+    </div>
+    <div>
+        <h3> Business Estimation </h3>
+        <div>
+            <form>
+                <div>
+                    <label for="trxFrequency"> Rata-rata frekuensi transaksi per hari </label>
+                    <input id="trxFrequency" name="trxFrequency" type="text">
+                    <div> Bagian ini wajib diisi </div>
+                    <div> Nilai harus lebih besar dari 0 </div>
+                </div>
+                <div>
+                    <label for="trxCurrency"> Rata-rata nominal per transaksi </label>
+                    <div>
+                        <div>
+                            <select id="trxCurrency" name="trxCurrency">
+                                <option value="0">Select currency</option>
+                            </select>
+                            <div> Bagian ini wajib diisi </div>
+                        </div>
+                        <div>
+                            <input id="trxAverage" name="trxAverage"
+                                placeholder="Input angka rata-rata nominal per transaksi" type="text">
+                            <div> Bagian ini wajib diisi </div>
+                            <div> Nilai harus lebih besar dari 0 </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <label for="trxCurrency"> Maksimum nominal per transaksi</label>
+                        <div>
+                            <select id="trxCurrency2" name="trxCurrency">
+                                <option value="0">Select currency</option>
+                            </select>
+                            <div> Bagian ini wajib diisi </span>
+                            </div>
+                            <div class="col">
+                                <div class="input-group">
+                                    <input id="trxMaximum" name="trxMaximum"
+                                        placeholder="Input angka maksimum nominal per transaksi" type="text"
+                                        maxlength="15">
+                                    <div> Bagian ini wajib diisi </div>
+                                    <div> Nilai harus lebih besar dari 0 </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</html>

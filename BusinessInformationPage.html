@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<div>
+    <div>
+        <!-- for Timeline  -->
+        <h3> Regristration </h3>
+        <ul>
+            <li>Informasi Bisnis</li>
+            <li>Informasi Pemilik Bisnis</li>
+            <li>Website Information Page & Business Estimation Page</li>
+            <li>Syarat & Ketentuan </li>
+        </ul>
+    </div>
+    <div>
+        <h3>Infomarmasi Bisnis</h3>
+        <form>
+            <div>
+                <label for="registeredCountry">Where is your company registered?</label>
+                <select id="registeredCountry" name="registeredCountry">
+                    <option value="0" selected> -- Choose One -- </option>
+                </select>
+                <div id="alertCountry">Please select your company's country</span>
+                </div>
+                <br>
+                <div>
+                    <label for="companyNameInp">Company Name</label>
+                    <select id="companyType" name="companyType">
+                        <option value="0" selected> -- Choose One -- </option>
+                    </select>
+                    <input id="companyNameInp" name="companyNameInp" placeholder="Company Name" type="text">
+                    <div id="alertCompanyType">Please select your company type</div>
+                    <div id="alertCompanyName">Please input your company name</div>
+                </div>
+                <br>
+                <div>
+                    <label for="brandNameInp">Brand Name</label>
+                    <div>
+                        <input id="brandNameInp" name="brandNameInp" placeholder="Brand Name" type="text">
+                        <div id="alertBrandName">Please input your brand name</div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <label for="LOBCompany">Line of Business</label>
+                    <select id="LOBCompany" name="LOBCompany">
+                        <option value="0" selected> -- Choose One -- </option>
+                    </select>
+                    <div id="alertLOBCompany">Please select your company LOB</div>
+                </div>
+                <br>
+                <div>
+                    <label for="areaInp">Area</label>
+                    <div>
+                        <input type="text" id="areaInp" name="areaInp" list="area" />
+                        <datalist id="area">
+                            <option value="0">Choose Area</option>
+                        </datalist>
+                        <div id="alertArea">Please select Area</div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <label for="companyAddressInp">Company Address</label>
+                    <div>
+                        <textarea id="companyAddressInp" name="companyAddressInp" placeholder="Company Address"
+                            type="text"></textarea>
+                        <div id="alertCompanyAddress">Please input your company Address</div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <label for="companyPhoneCode">Company Phone Number</label>
+
+                    <select id="companyPhoneCode" name="companyPhoneCode" class="form-control"
+                        formControlName="companyPhoneCode" [(ngModel)]="companyPhoneCode">
+                        <option value="0" selected> -- Choose One -- </option>
+                    </select>
+                    <input id="companyPhoneNumber" name="companyPhoneNumber" placeholder="81xxxxxxxx" type="text" />
+                    <div id="alertCompanyPhoneCode">Please select your company phone code</div>
+                    <div id="alertCompanyPhoneNum">Please input your company phone number</div>
+                </div>
+
+                <!-- not personal Business -->
+                <div>
+                    <h4>Company Documents</h4>
+                    <!-- If Indo Reg -->
+                    <div>
+                        <form>
+                            <div>
+                                <label for="npwnCompanyNumber">NPWP Number</label>
+                                <div class="input-group">
+                                    <input id="npwnCompanyNumber" class="form-control" placeholder="NPWP Number"
+                                        type="text" formControlName="npwnCompanyNumber" [(ngModel)]="npwnCompanyNumber"
+                                        maxlength="20">
+                                </div>
+                                <div id="npwnCompanyNumberAlert">Please insert your NPWP number</div>
+                            </div>
+                            <div>
+                                <label for="npwpCompanyScan">NPWP Scan</label>
+                                <div class="col-9">
+                                    <i>Uploaded</i>
+                                    <input type="file" id="npwpCompanyScan" name="npwnCompanyFileName">
+                                    <div id="npwnCompanyFileNameAlert">Please select your NPWP file</div>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="aktaScan">Deed of Establishment (Akta Pendirian)</label>
+                                <div>
+                                    <i>Uploaded</i>
+                                    <input type="file" id="aktaScan" name="aktaFileName">
+                                    <div id="aktaFileNameAlert">Please select your Deed of Establishment (Akta
+                                        Pendirian) file</div>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="skMenkehScan">SK Menkeh</label>
+                                <div>
+                                    <i>Uploaded</i>
+                                    <input type="file" id="skMenkehScan" name="skMenkehFileName">
+                                    <div id="skMenkehFileNameAlert">Please select your SK Menkeh file</div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- If Other region-->
+                    <div>
+                        <form>
+                            <div>
+                                <label for="compRegLetter">Company Registration letter</label>
+                                <div>
+                                    <i>Uploaded</i>
+                                    <input type="file" id="compRegLetter" name="regLetterFileName">
+                                    <div id="regLetterFileNameAlert">Please select your Company Registration letter</div>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="bankRefLetter">Bank Reference Letter</label>
+                                <div>
+                                    <i>Uploaded</i>
+                                    <input type="file" id="bankRefLetter" name="bankReffFileName">
+                                    <div id="bankReffFileNameAlert">Please select your Bank Reference Letter
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- For Other doc-->
+                    <div>
+                        <form>
+                            <div>
+                                <label for="addDocument">Additional Documents</label>
+                                <div>
+                                    <i">Uploaded</i>
+                                        <input type="file" id="addDocument" name="otherDocFileName">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+</html>

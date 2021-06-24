@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<div>
+    <div>
+        <!-- for Timeline  -->
+        <h3> Regristration </h3>
+        <ul>
+            <li>Informasi Bisnis</li>
+            <li>Informasi Pemilik Bisnis</li>
+            <li>Website Information Page & Business Estimation Page</li>
+            <li>Syarat & Ketentuan </li>
+        </ul>
+
+    </div>
+    <div>
+        <h3>Infomarmasi pemilik Bisnis</h3>
+        <form>
+            <div>
+                <label for="person">Position</label> <br>
+                <input id="personPosition" name="personPosition" placeholder="'Contoh: Pemilik / Direktur / CEO / CMO, dll.'}" type="text">
+                <div id="positionAlert">Please input your position</div>
+            </div>
+            <div>
+                <label for="fullname">Nama lengkap sesuai dengan KTP/NPWP/Passport</label>
+
+                <input id="personFullName" name="personFullName" placeholder="Anton Budiman" type="text">
+                <div id="lastNameAlert">Please insert your full name</div>
+            </div>
+            <div>
+                <label for="nationality">Nationality</label>
+                <select name="personNationality" id="selectPersonNationality">
+                    <option value="0" selected>-- Choose One --</option>
+                </select>
+            </div>
+            <div>
+                <!-- doc if WNI -->
+                <form>
+                    <div>
+                        <label for="ktpNumber">KTP Number</label>
+                        <input id="ktpNumber" placeholder="KTP Number" type="text">
+                        <div id="ktpNumberAlert">Please insert your KTP number</div>
+                    </div>
+                    <div>
+                        <label for="ktpScan">KTP Scan</label>
+                        <div>
+                            <i>Uploaded</i>
+                            <input type="file" id="ktpScan" name="ktpFileName2">
+                            <div id="ktpFileNameAlert">Please select your KTP file</div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="npwnNumber">NPWP Number</label>
+                        <input id="npwnNumber" placeholder="NPWP Number" type="text" maxlength="20">
+                        <div id="npwnNumberAlert">Please insert your NPWP number</div>
+                    </div>
+            </div>
+            <div>
+                <label for="npwnScan">NPWP Scan</label>
+                <div>
+                    <i>Uploaded</i>
+                    <input type="file" id="npwnScan" name="npwpFileName">
+                    <div id="npwpFileNameAlert">Please select your NPWP file</div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- doc WNA -->
+    <div>
+        <form>
+            <div>
+                <label for="docType">Document Type</label>
+                <div>
+                    <select name="docType" id="docType">
+                        <option value="0">-- Choose One --</option>
+                        <option value="Passport">Passport</option>
+                        <option value="KITAS">KITAS</option>
+                    </select>
+                    <div id="docTypeAlert">Please select your document type</div>
+                </div>
+            </div>
+            <div>
+                <label for="docNumber">{{docType}} Number</label>
+                <div>
+                    <input id="docNumber" placeholder="Number" type="text">
+                    <div id="docNumberAlert">Please insert your {{docType}} number</div>
+                </div>
+            </div>
+            <div>
+                <label for="docScan">{{docType}} Scan</label>
+                <div>
+                    <i>Uploaded</i>
+                    <input type="file" id="docScan" name="docFileName">
+                    <div id="docFileNameAlert">Please select your {{docType}} file</div>
+                </div>
+            </div>
+        </form>
+        <div>
+        </form>
+    </div>
+</div>
+
+</html>
