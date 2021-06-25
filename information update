@@ -1,6 +1,6 @@
 Page yang sudah Dikerjakan :
 
-1. Splash Screen to Introduce Jokul & DOKU (optional) ❌
+1. Splash Screen to Introduce Jokul & DOKU (optional) ✅
 2. Default Package Page  	✅
 3. Choose Business Type Page  	✅
 4. Business Information Page (Entity Type + Upload Docs, Name, Brand Name(?), LOB + Upload Docs, Address) (Publish streaming-business-register, include BSN & MCH & email dalam jwt) 	✅
@@ -12,10 +12,15 @@ Page yang sudah Dikerjakan :
 10. Congratulation Page & Able to receive payment & request payout schedule & Call To Action (CTA) tergantung persona 	✅
 11. Add Service Page later in Service Management << require additional KYB by EDU / BS ✅
 
-Date 24-01-2021
+Date 24-06-2021
 Note :
  1. page masih satu bahasa 
  2. untuk bagian Business Estimation masih sama persis dengan yang terdahulu (* terkait meet AA x RR x FC On Boarding Flow, akan dibuat flow agar user experience meningkat)
  3. untuk page (Term & condition) & (Congratulation) text nya masih menggunkan existing 
  4. untuk pop up belum dibuat
  5. untuk service masih sama seperti existing
+
+ Date 25-06-2021
+ Note :
+ 1. just only add page for splash screen
+ 2. untuk image dan icon belum menggunkan standart doku (image only crop from jokul web & icon use matrial art icon)
