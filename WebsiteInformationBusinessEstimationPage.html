@@ -12,6 +12,58 @@
         </ul>
     </div>
     <div>
+        <label for="brandNameInp">Brand Name</label>
+        <div>
+            <input id="brandNameInp" name="brandNameInp" placeholder="Brand Name" type="text">
+            <div id="alertBrandName">Please input your brand name</div>
+        </div>
+    </div>
+    <br>
+
+    <div>
+        <h3> Silakan masukkan kanal penjualan utama Anda yang akan diverifikasi oleh tim kami: </h3>
+        <select style="float: left">
+            <option>Website</option>
+            <option>Aplikasi</option>
+            <option>Facebook</option>
+            <option>Instagram</option>
+            <option>Tokopedia</option>
+        </select>
+    </div>
+    <div>
+        <input type="text" value="https://toko.com/">
+    </div>
+    <div>
+        <input type="checkbox">Masih dalam pengembangan
+    </div>
+    <div>
+        Silakan masukkan nama website / aplikasi yang masih dalam pengembangan untuk dapat kami lakukan verifikasi
+    </div>
+    <div>
+        <select style="float: left">
+            <option>Website</option>
+            <option>Aplikasi</option>
+        </select>
+    </div>
+    <div>
+        <input type="text" value="https://dev.toko.com/">
+    </div>
+    <div>
+        Jika Anda memiliki kanal pemasaran lainnya, silakan ditambahkan:
+    </div>
+    <div>
+        <select style="float: left">
+            <option>Website</option>
+            <option>Aplikasi</option>
+            <option>Facebook</option>
+            <option>Instagram</option>
+            <option>Tokopedia</option>
+        </select>
+    </div>
+    <div>
+        <input type="text" value="https://instagram.com/toko"> + 
+    </div>
+<!--    <div>
         <h3> Web Site Information </h3>
         <label for="businessWebInp">Apakah Bisnis Anda Punya Website/Aplikasi</label> <br>
         <select id="businessWebInp" name="businessWebInp">
@@ -26,8 +78,32 @@
             <option value="1" selected> Toko Di Marketplace </option>
         </select>
         <input type="text" id="socmedUrlInp" name="socmedUrlInp" placeholder="Sosmed Url"> <br>
-    </div>
+    </div> -->
+
     <div>
+        <h3> Transaction Size </h3>
+        <div>
+            <form>
+                <div>
+                    <label for="trxFrequency"> Seberapa sering Anda menerima transaksi secara online ?</label>
+                        <select>
+                            <option>Setiap hari pasti ada transaksi</option>
+                            <option>Tidak rutin setiap hari</option>
+                            <option>Seasonal, banyak transaksi di momen tertentu</option>
+                            <option>Rutin banyak transaksi</option>
+                        </select>
+                </div>
+                <div>
+                    <label for="trxCurrency"> Seberapa rata-rata harga barang yang Anda jual ? </label>
+                    <select>
+                            <option>Di antara 1-25 juta rupiah</option>
+                            <option>Di bawah 1 juta rupiah</option>
+                            <option>Di atas 25 juta rupiah</option>
+                    </select> 
+            </form>
+        </div>
+
+<!--    <div>
         <h3> Business Estimation </h3>
         <div>
             <form>
@@ -74,7 +150,7 @@
                         </div>
                     </div>
             </form>
-        </div>
+        </div> -->
         <button>kembali</button>
         <button>Lanjutkan</button>
     </div>

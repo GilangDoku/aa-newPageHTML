@@ -1,0 +1,32 @@
+Halaman package:
+ 1. get all service name yang auto active
+
+Halaman businesss type: Static
+
+Business Info:
+1. Get all country (dipanggil kalau international merchant)
+2. Get all legal entity type
+3. Get all legal entity document type
+4. Get all line of business
+5. Get all line of business document type
+6. Get all area (exclude international default area)
+7. Save to business, address, business_document
+
+Business Owner:
+1. Get all country
+2. Get all nationality document type
+3. Get chosen random liveness factor
+	- check if contact already exist:
+		- if exist return random liveness factor
+		- if not exist create contact with empty data & generate random liveness factor 
+5. Save to contact, business_document
+
+Website Information & Business Estimation
+1. Get all social media
+2. Get all transaction frequency
+3. Get all ticket size
+4. Save to brand, business_social_media
+
+Term & Condition: Static
+1. Save business_service
+2. Publish streaming_business_service_verified 
