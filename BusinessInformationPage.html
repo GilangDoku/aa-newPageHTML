@@ -73,76 +73,29 @@
 
                 <!-- not personal Business -->
                 <div>
-                    <h4>Company Documents</h4>
-                    <!-- If Indo Reg -->
+                    <h4>Business Documents</h4>
                     <div>
                         <form>
                             <div>
-                                <label for="npwnCompanyNumberINP">NPWP Number</label>
-                                <div>
-                                    <input id="npwnCompanyNumber" class="form-control" placeholder="NPWP Number"
-                                        type="text" formControlName="npwnCompanyNumber" [(ngModel)]="npwnCompanyNumber"
-                                        maxlength="20">
-                                </div>
-                                <div id="npwnCompanyNumberAlert">Please insert your NPWP number</div>
-                            </div>
-                            <div>
-                                <label for="npwpCompanyScan">NPWP Scan</label>
-                                <div class="col-9">
-                                    <i>Uploaded</i>
-                                    <input type="file" id="npwpCompanyScan" name="npwnCompanyFileName">
-                                    <div id="npwnCompanyFileNameAlert">Please select your NPWP file</div>
-                                </div>
-                            </div>
-                            <div>
-                                <label for="aktaScan">Deed of Establishment (Akta Pendirian)</label>
+                                <!--looping dokument apa saja yang perlu di input berdasarkan legal entity yang dipilih-->
+                                <label for="{{documentLegal.documentType.code}}Scan">{{documentLegal.documentType.name}}</label>
                                 <div>
                                     <i>Uploaded</i>
-                                    <input type="file" id="aktaScan" name="aktaFileName">
-                                    <div id="aktaFileNameAlert">Please select your Deed of Establishment (Akta
-                                        Pendirian) file</div>
+                                    <input type="file" id="{{documentLegal.documentType.code}}Scan" name="ktpFileName">
+                                    <div id="{{documentLegal.documentType.code}}Alert">This field is required Bagian ini wajib diisi</div>
+                                    <div id = "{{documentLegal.documentType.code}}Alert"> The file exceeds the maximum limit of 15MB </div>
+                                    <div id = "{{documentLegal.documentType.code}}FormatAlert"> The file format not supported </div>
                                 </div>
                             </div>
                             <div>
-                                <label for="skMenkehScan">SK Menkeh</label>
+                                <!--looping dokument apa saja yang perlu di input berdasarkan LOB yang dipilih-->
+                                <label for="ktpScan">{{documentLOB.documentType.name}}</label>
                                 <div>
                                     <i>Uploaded</i>
-                                    <input type="file" id="skMenkehScan" name="skMenkehFileName">
-                                    <div id="skMenkehFileNameAlert">Please select your SK Menkeh file</div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <!-- If Other region-->
-                    <div>
-                        <form>
-                            <div>
-                                <label for="compRegLetter">Company Registration letter</label>
-                                <div>
-                                    <i>Uploaded</i>
-                                    <input type="file" id="compRegLetter" name="regLetterFileName">
-                                    <div id="regLetterFileNameAlert">Please select your Company Registration letter</div>
-                                </div>
-                            </div>
-                            <div>
-                                <label for="bankRefLetter">Bank Reference Letter</label>
-                                <div>
-                                    <i>Uploaded</i>
-                                    <input type="file" id="bankRefLetter" name="bankReffFileName">
-                                    <div id="bankReffFileNameAlert">Please select your Bank Reference Letter
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <!-- For Other doc-->
-                    <div>
-                        <form>
-                            <div>
-                                <label for="addDocument">Additional Documents</label>
-                                <div>
-                                    <i">Uploaded</i>
-                                        <input type="file" id="addDocument" name="otherDocFileName">
+                                    <input type="file" id="{{documentLOB.documentType.code}}Scan" name="ktpFileName">
+                                    <div id="{{documentLOB.documentType.code}}Alert">This field is required Bagian ini wajib diisi</div>
+                                    <div id = "{{documentLOB.documentType.code}}Alert"> The file exceeds the maximum limit of 15MB </div>
+                                    <div id = "{{ddocumentLOB.documentType.code}}FormatAlert"> The file format not supported </div>
                                 </div>
                             </div>
                         </form>
