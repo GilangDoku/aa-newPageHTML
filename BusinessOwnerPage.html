@@ -17,49 +17,48 @@
         <form>
             <div>
                 <label for="person">Position</label> <br>
-                <input id="personPosition" name="personPosition" placeholder="'Contoh: Pemilik / Direktur / CEO / CMO, dll.'}" type="text">
+                <input id="personPositionInp" name="personPositionInp" placeholder="'Contoh: Pemilik / Direktur / CEO / CMO, dll.'}" type="text">
                 <div id="positionAlert">Please input your position</div>
             </div>
             <div>
                 <label for="fullname">Nama lengkap sesuai dengan KTP/NPWP/Passport</label>
 
-                <input id="personFullName" name="personFullName" placeholder="Anton Budiman" type="text">
+                <input id="personFullNameInp" name="personFullNameInp" placeholder="Anton Budiman" type="text">
                 <div id="lastNameAlert">Please insert your full name</div>
             </div>
             <div>
-                <label for="nationality">Nationality</label>
-                <select name="personNationality" id="selectPersonNationality">
+                <label for="selectPersonNationality">Nationality</label>
+                <select name="selectPersonNationality" id="selectPersonNationality">
                     <option value="0" selected>-- Choose One --</option>
                 </select>
+                <div id="personNationalityAlert">Please select your Nationality</div>
             </div>
             <div>
                 <!-- doc if WNI -->
                 <form>
                     <div>
-                        <label for="ktpNumber">KTP Number</label>
-                        <input id="ktpNumber" placeholder="KTP Number" type="text">
-                        <div id="ktpNumberAlert">Please insert your KTP number</div>
-                    </div>
-                    <div>
                         <label for="ktpScan">KTP Scan</label>
                         <div>
                             <i>Uploaded</i>
-                            <input type="file" id="ktpScan" name="ktpFileName2">
+                            <input type="file" id="ktpScan" name="ktpFileName">
                             <div id="ktpFileNameAlert">Please select your KTP file</div>
+                            <div id = "ktpFileNameSizeAlert"> The file exceeds the maximum limit of 15MB </div>
+                            <div id = "ktpFileNameFormatAlert"> The file format not supported </div>
                         </div>
                     </div>
                     <div>
-                        <label for="npwnNumber">NPWP Number</label>
-                        <input id="npwnNumber" placeholder="NPWP Number" type="text" maxlength="20">
-                        <div id="npwnNumberAlert">Please insert your NPWP number</div>
+                        <label for="ktpNumber">KTP Number</label>
+                        <input id="ktpNumberInp" placeholder="KTP Number" type="text">
+                        <div id="ktpNumberAlert">Please insert your KTP number</div>
                     </div>
-            </div>
             <div>
-                <label for="npwnScan">NPWP Scan</label>
+                <label for="selfieKtpScan">Selfie dengan KTP sambil {{randomLiveness.name}}</label>
                 <div>
                     <i>Uploaded</i>
-                    <input type="file" id="npwnScan" name="npwpFileName">
-                    <div id="npwpFileNameAlert">Please select your NPWP file</div>
+                    <input type="file" id="selfieKtpScan" name="selfieKtpFileName">
+                    <div id="selfieKtpFileNameAlert">Please insert your selfie/div>
+                    <div id = "selfieFileNameSizeAlert"> The file exceeds the maximum limit of 15MB </div>
+                    <div id = "selfieFileNameFormatAlert"> The file format not supported </div>
                 </div>
             </div>
         </form>
@@ -68,35 +67,39 @@
     <div>
         <form>
             <div>
-                <label for="docType">Document Type</label>
-                <div>
-                    <select name="docType" id="docType">
-                        <option value="0">-- Choose One --</option>
-                        <option value="Passport">Passport</option>
-                        <option value="KITAS">KITAS</option>
-                    </select>
-                    <div id="docTypeAlert">Please select your document type</div>
-                </div>
-            </div>
-            <div>
-                <label for="docNumber">{{docType}} Number</label>
-                <div>
-                    <input id="docNumber" placeholder="Number" type="text">
-                    <div id="docNumberAlert">Please insert your {{docType}} number</div>
-                </div>
-            </div>
-            <div>
-                <label for="docScan">{{docType}} Scan</label>
+                <label for="passportScan">Passport Scan</label>
                 <div>
                     <i>Uploaded</i>
-                    <input type="file" id="docScan" name="docFileName">
-                    <div id="docFileNameAlert">Please select your {{docType}} file</div>
+                    <input type="file" id="passportScan" name="passportFileName">
+                    <div id="passportFileNameAlert">Please insert your passport file<div>
+                        <div id = "passportFileNameSizeAlert"> The file exceeds the maximum limit of 15MB </div>
+                        <div id = "passportFileNameFormatAlert"> The file format not supported </div>
                 </div>
+            </div>
+            <div>
+                <label for="passportNumber">Passport Number</label>
+                <input id="passportNumberInp" placeholder="Passport Number" type="text">
+                <div id="passportNumberAlert">Please insert your Passport number</div>
+            </div>
+            <div>
+                <label for="kitasScan">KITAS Scan</label>
+                <div>
+                    <i>Uploaded</i>
+                    <input type="file" id="kitasScan" name="kitasFileName">
+                    <div id="kitasFileNameAlert">Please insert your KITAS file<div>
+                        <div id = "kitasFileNameSizeAlert"> The file exceeds the maximum limit of 15MB </div>
+                        <div id = "kitasFileNameFormatAlert"> The file format not supported </div>
+                </div>
+            </div>
+            <div>
+                <label for="kitasNumber">Kitas Number</label>
+                <input id="kitasNumberInp" placeholder="KITAS Number" type="text">
+                <div id="kitasNumberAlert">Please insert your KITAS number</div>
             </div>
         </form>
         <div>
-            <button>kembali</button>
-            <button>Lanjutkan</button>
+            <button id="backBtn">kembali</button>
+            <button id="nextBtn">Lanjutkan</button>
         </form>
     </div>
 </div>
